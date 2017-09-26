@@ -1,0 +1,148 @@
+/*
+    EXCERCISE 2
+        Styling the slideshow and navigation buttons
+                                                      */
+
+      /* Style the slide for slideshow */
+      .slide {
+          width: 140%;
+      }
+
+      /* Style the image navigation buttons */
+      .imagenav{
+          background-color: #f2f2f2;
+          border: none;
+          padding: none;
+          transition: 0.3s;
+          font-size: 17px;
+          height:50px;
+          width:90px;
+      }
+
+      /* Change background color of other buttons on hover */
+      .imagenav:hover {
+          background-color: #ddd;
+      }
+
+
+/*
+    EXCERCISE 3
+        Styling the profile pictures and information
+                                                      */
+
+      /* Style the profile pic */
+      .propic1 {
+          float: right;
+          padding-right: 14%;
+      }
+
+      /* Style the second picture */
+      .propic2 {
+          float: right;
+      }
+
+      /* Style the user info */
+      .userinfo {
+          padding: 10 10 10 10;
+          background-color: #ddd;
+
+          border: solid #ccc;
+          border-color: #212121;
+      }
+
+
+/*
+    EXCERCISE 4
+        Styling the dummy paragraph of text
+                                                  */
+
+      .test {
+          padding: 10 10 10 10;
+          background-color: #ddd;
+          width: 60%;
+          transition: 1s;
+
+          border: thick solid;
+          border-color: #212121;
+      }
+
+      /* div for input boxes for values */
+      .colors {
+        -webkit-columns: 100px 2; /* Chrome, Safari, Opera */
+        -moz-columns: 100px 2; /* Firefox */
+        columns: 100px 2;
+        width: 20%;
+      }
+
+      /* actual input boxes */
+      .modification {
+        width: 90px;
+      }
+
+
+/*
+    GENERAL SETUP
+        for tab interface and color changing body
+                                                  */
+      body {
+          font-family: "Lato", sans-serif;
+          animation: colorchange 50s;
+          -webkit-animation: colorchange 50s;
+          animation-iteration-count:infinite;
+      }
+
+      @keyframes colorchange
+      {
+          0%   {background: rgb(189,210,254);}
+          25%  {background: rgb(242,224,116);}
+          50%  {background: rgb(255, 204, 255);}
+          75%  {background: rgb(102, 255, 153);}
+          0%   {background: rgb(189,210,254);}
+      }
+
+      @-webkit-keyframes colorchange /* Safari and Chrome */
+      {
+          0%   {background: rgb(189,210,254);}
+          25%  {background: rgb(242,224,116);}
+          50%  {background: rgb(255, 204, 255);}
+          75%  {background: rgb(102, 255, 153);}
+          0%   {background: rgb(189,210,254);}
+      }
+
+      img {
+          max-width:35%;
+      }
+
+      /* Tab style */
+      div.tab {
+          overflow: hidden;
+          background-color: #f2f2f2;
+          border: 2px;
+      }
+
+      /* Buttons inside of tabs */
+      div.tab button {
+          background-color: inherit;
+          float: none;
+          border: none;
+          padding: 14px 16px;
+          transition: 0.3s;
+          font-size: 17px;
+      }
+
+      /* Change background color of tab buttons on hover */
+      div.tab button:hover {
+          background-color: #ddd;
+      }
+
+      /* Create an active/current tablink class */
+      div.tab button.active {
+          background-color: #ccc;
+      }
+
+      /* Style the tab content */
+      .tabcontent {
+          display: none;
+          padding: 6px 12px;
+          border: 0px solid #ccc;
+      }

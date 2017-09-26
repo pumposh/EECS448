@@ -1,0 +1,128 @@
+<html>
+<head>
+  <title> Lab 03
+  </title>
+  <link href="style.css"
+      rel="stylesheet"
+      type="text/css"/>
+</head>
+
+<center>
+  <body>
+    <br><br><br><br>
+  <div class="tab">
+    <button class="tablinks" onclick="changeTab(event, 'Password')">Exercise 1<br>Password Validator</button>
+    <button class="tablinks" onclick="changeTab(event, 'Slideshow')">Exercise 2<br>Slideshow</button>
+    <button class="tablinks" onclick="changeTab(event, 'Profile')">Exercise 3<br>Personal Profile</button>
+    <button class="tablinks" onclick="changeTab(event, 'CSS')">Exercise 4<br>CSS Manipulation</button>
+    <button class="tablinks" onclick="changeTab(event, 'Publication')">Exercise 5<br>Publication</button>
+  </div>
+
+<br><br><br>
+
+
+<!--
+    EXCERCISE 1
+        Password Validator
+                            -->
+  <div id="Password" class="tabcontent">
+
+    Password:
+      <br>
+    <input type="password" id="password1">
+      <br><br>
+
+    Verify Password:
+      <br>
+    <input type="password" id="password2">
+      <br><br>
+
+    <input type="submit" value="Validate" onclick="passwordValidate()">
+
+  </div>
+
+
+<!--
+    EXCERCISE 2
+        Slideshow Navigator
+                            -->
+  <div id="Slideshow" class="tabcontent">
+
+    <button class="imagenav" onclick="prevImage()">
+      <img src="https://image.flaticon.com/icons/svg/9/9895.svg" id="prev">
+    </button>
+
+    <img class="slide" src="https://media.giphy.com/media/3o7TKUMk1IysRprsis/giphy.gif" id="slide" >
+
+    <button class="imagenav" onclick="nextImage()">
+      <img src="https://image.flaticon.com/icons/svg/9/9943.svg" id="next">
+    </button>
+    <br>
+
+  </div>
+
+
+<!--
+    EXCERCISE 3
+        Profile Page
+                      -->
+  <div id="Profile" class="tabcontent">
+
+    <img src="http://i.imgur.com/U0elH6j.png" class="propic1">
+    <h1 class="userinfo">
+      Haute Dogue
+    </h1>
+    <p class="userinfo">
+      I am an aspiring disk jockey (DJ for short for those who didn't know).
+      I know how to hype up audiences. You've probably heard of me because I'm a famous DJ (abbreviation of Disk Jockey).
+      I throw down tunes and dance to the beat. I can also break dance with my music so you are jealous of me. I am Haute Dogue;
+      the ruler of the world.
+    </p>
+    <p class="userinfo">
+      <b>My favorite websites</b>
+      <br><br>
+        <a href = "http://www.guyfieri.com">Guy Fieri homepage</a> <br>
+        <a href = "http://www.soundcloud.com">SoundCloud</a> <br>
+        <a href = "http://www.cornhub.com">CornHub</a>
+    </p>
+    <img src="https://i.kinja-img.com/gawker-media/image/upload/s--_WDtGCHG--/c_scale,f_auto,fl_progressive,q_80,w_800/xa3fxufloze7hmnlpkrn.png"
+      class="propic2">
+
+  </div>
+
+
+<!--
+    EXCERCISE 4
+        CSS Modifier
+                      -->
+  <div id="CSS" class="tabcontent">
+    <p class = "test" id = "test">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In quis pharetra ante. Nunc felis ex, rutrum in purus ac, eleifend pharetra purus. Maecenas elementum id nibh eu laoreet. Vestibulum sodales in lacus quis consequat. Aliquam mattis elementum aliquet. Ut et est libero. Vestibulum vel eros lobortis, placerat purus id, ultricies orci. Praesent tristique, lectus ut sagittis laoreet, nisl lacus congue libero, vel fermentum ante libero quis dolor. Praesent vehicula, odio id euismod volutpat, libero lectus ullamcorper turpis, id ornare tortor nisl quis diam. Nam nec fringilla eros. Sed elit lorem, blandit ac auctor ac, tempor et dolor. Ut quam est, sollicitudin sed elit sit amet, blandit ullamcorper augue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus justo ex, congue id ornare nec, convallis vitae lorem. Duis rhoncus quam vel neque auctor, eu semper sapien cursus. Praesent arcu lacus, eleifend eu tortor ac, dapibus mollis enim.
+    </p>
+    <div class="colors">
+      Border<br>
+      <input type="text" class="modification" id="borderRed" placeholder="Red (0-255)"><br>
+      <input type="text" class="modification" id="borderGreen" placeholder="Green (0-255)"><br>
+      <input type="text" class="modification" id="borderBlue" placeholder="Blue (0-255)"><br>
+      <input type="text" class="modification" id="thickness" placeholder="Thickness"><br>
+
+      Background Color<br>
+      <input type="text" class="modification" id="backRed" placeholder="Red (0-255)"><br>
+      <input type="text" class="modification" id="backGreen" placeholder="Green (0-255)"><br>
+      <input type="text" class="modification" id="backBlue" placeholder="Blue (0-255)">
+    </div>
+
+    <br>
+    <input type="submit" value="Submit" onclick="setColors()" class="imagenav">
+
+
+  </div>
+
+  <div id="Publication" class="tabcontent">
+
+  </div>
+
+  </body>
+</center>
+<script src="functional.js"></script>
+</html>
