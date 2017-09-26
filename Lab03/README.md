@@ -9,4 +9,4 @@ To access this project correctly you can either:
 
   2) Access project remotely
     - open browser of your choice
-    - navigate to https://people.eecs.ku.edu/~p544b802/
+    - navigate to https://people.eecs.ku.edu/~p544b802/Lab03/
