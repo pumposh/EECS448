@@ -1,0 +1,50 @@
+<html>
+<body>
+  <link href="style.css"
+      rel="stylesheet"
+      type="text/css"/>
+  <br>
+  <form name = "form" action="customerBackEnd.php" method="post"  onsubmit="return validate()">
+    <p align = "right">Username:  <input type="text" name="username"><br></p>
+    <p align = "right">Password:  <input type="password" name="password"></p>
+<center>
+
+    <h1>Welcome to the online store of garbage</h3>
+
+    <br><br>
+    <input type = "checkbox" name = "item1" value = "19.99">
+    <img width="100px" src="http://www.gardenista.com/wp-content/uploads/2015/04/fields/Fiskars-Aluminum-Garden-Rake.jpg"></img>$19.99
+    <h3>Cool rake</h3>
+
+    <br>
+
+    <input type = "checkbox" name = "item2" value = "12.99">
+    <img width="100px" src="https://images-na.ssl-images-amazon.com/images/I/717fcpfhflL._SL1100_.jpg"></img>$12.99
+    <h3>Fanny pack</h3>
+
+    <br>
+
+    <input type = "checkbox" name = "item3" value = "29.99">
+    <img width="100px" src="https://images-na.ssl-images-amazon.com/images/I/71JJe9hP1FL._SL1432_.jpg"></img>$29.99
+    <h3>Real life sea turtle</h3>
+
+    <br>
+    <h2>Shipping</h2>
+
+    <p><input type = "radio" name = "shipping" value = "0" checked="checked">
+      Standard shipping (5-7 days) (Free)</p>
+
+    <p><input type = "radio" name = "shipping" value = "5">
+      3 day shipping ($5.00)</p>
+
+    <p><input type = "radio" name = "shipping" value = "50">
+      Overnight shipping ($50.00)</p>
+
+      <br>
+    <input type="reset" value="Reset">
+    <input type="submit" value="Complete purchase">
+</center>
+</form>
+</body>
+<script src="formChecker.js"></script>
+</html>
