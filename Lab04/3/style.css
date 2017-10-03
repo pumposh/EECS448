@@ -1,0 +1,24 @@
+body {
+    font-family: "Lato", sans-serif;
+    animation: colorchange 50s;
+    -webkit-animation: colorchange 50s;
+    animation-iteration-count:infinite;
+}
+
+@keyframes colorchange
+{
+    0%   {background: rgb(189,210,254);}
+    25%  {background: rgb(242,224,116);}
+    50%  {background: rgb(255, 204, 255);}
+    75%  {background: rgb(102, 255, 153);}
+    0%   {background: rgb(189,210,254);}
+}
+
+@-webkit-keyframes colorchange /* Safari and Chrome */
+{
+    0%   {background: rgb(189,210,254);}
+    25%  {background: rgb(242,224,116);}
+    50%  {background: rgb(255, 204, 255);}
+    75%  {background: rgb(102, 255, 153);}
+    0%   {background: rgb(189,210,254);}
+}
