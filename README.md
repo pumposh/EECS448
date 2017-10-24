@@ -1,7 +1,7 @@
 # EECS448
 Projects developed based under guidelines for labs/projects in Software Engineering I (EECS 448)
 
-# Rough guidelines for EECS 448
+#### Rough guidelines for EECS 448
   - Lab Assignments can be found at https://wiki.ittc.ku.edu/ittc_wiki/index.php/EECS448:Labs
   - Projects can be found at https://wiki.ittc.ku.edu/ittc_wiki/index.php/EECS448:Projects
                               
