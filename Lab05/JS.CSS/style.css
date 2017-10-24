@@ -1,0 +1,58 @@
+
+/*
+    GENERAL SETUP
+        for tab interface and color changing body
+                                                  */
+    body {
+    font-family: "Lato", sans-serif;
+    animation: colorchange 50s;
+    -webkit-animation: colorchange 50s;
+    animation-iteration-count:infinite;
+}
+
+img {
+    max-width:35%;
+}
+
+/* Tab style */
+div.tab {
+    overflow: hidden;
+    background-color: #f2f2f2;
+    border: 2px;
+}
+
+/* Buttons inside of tabs */
+div.tab button {
+    background-color: inherit;
+    float: none;
+    border: none;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of tab buttons on hover */
+div.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 0px solid #ccc;
+}
+
+.container {
+    width: 500px;
+    clear: both;
+}
+.container input {
+    width: 100%;
+    clear: both;
+}
