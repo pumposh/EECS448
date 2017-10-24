@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>
+        Blog Poster!    
+        </title>
+        <link href="JS.CSS/style.css"
+        rel="stylesheet"
+        type="text/css"/>
+    </head>
+    
+
+    <body>
+        <br><br><br><br>
+          <div class="tab">
+            <button class="tablinks" onclick="changeTab(event, 'CreateUser')">Create Account</button>                
+            <button class="tablinks" onclick="changeTab(event, 'Post')">Create Post</button>
+            <button class="tablinks" onclick="changeTab(event, 'Admin')">Admin</button>
+          </div>
+        <br><br><br>
+        
+        <div id="Post" class="tabcontent">
+            <form name = "form" action="User/Post.php" target="_blank" method="post" class="container">
+                <p>Username:  <input type="text" name="userLogin"><br></p>
+                <p>Post:      <input type="text" name="post" style="height:60px;"><br></p>
+                <br><input type="submit" value="Post"> 
+            </form>
+        </div>
+
+        <div id="CreateUser" class="tabcontent">                
+            <form name = "form" action="User/CreateUser.php" target="_blank" method="post" class="container">
+                <p>Username: <input type="text" name="userCreate"><br></p>
+                <br><input type="submit" value="Create Account">
+            </form>
+        </div>
+
+        <div id="Admin" class="tabcontent">
+            <a href = "Admin/DisplayUsers.php" target="_blank">Display all users</a><br>
+            <a href = "Admin/ChoosePost.php" target="_blank">View user posts</a><br>
+            <a href = "Admin/DeletePost.php" target="_blank">Delete posts</a>
+        </div>
+
+
+    </body>
+    <script src="JS.CSS/changeTab.js"></script>
+</html>
